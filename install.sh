@@ -37,7 +37,7 @@ if ! command -v blueprint &> /dev/null; then
 else
     echo "Blueprint sudah terinstall, melanjutkan..."
 fi
-
+blueprint -upgrade
 # Auto-download file zeedun.blueprint kalau belum ada
 if [ ! -f "zeedun.blueprint" ]; then
     echo "Mendownload zeedun.blueprint..."
