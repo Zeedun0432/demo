@@ -50,6 +50,9 @@ if [ ! -f "zeedun.blueprint" ]; then
 fi
 
 echo "Menginstall extension Zeedun..."
+echo "Menginstall extension Zeedun..."
+cd "$PTERODACTYL_DIR"
+yarn install
 blueprint -unlock
 blueprint -install zeedun.blueprint
 
